@@ -41,6 +41,6 @@ def hashcollector(fname):
 
 lst_file(CHECK_PATH)
 
-with open(LOG_PATH, 'w') as resultf:
+with open(LOG_PATH, 'w', encoding="utf-8") as resultf:
     for key in hash_dict.keys():
         resultf.write("{0} -> {1}\n".format(key, str(hash_dict[key])))
